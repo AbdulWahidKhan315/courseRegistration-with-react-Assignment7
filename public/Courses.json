@@ -35,7 +35,7 @@
       "Credit": "5hr"
     },
     {
-      "image": "./images/Rectangle 2-5.pngjpg",
+      "image": "./images/hello1.png",
       "name": "Introduction to OOP Python",
       "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
       "price": 23000,
@@ -45,21 +45,21 @@
       "image": "./images/Rectangle 3-1.png",
       "name": "AWS, Cloud Computing",
       "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
-      "price": 35000,
+      "price": 36000,
       "Credit": "5hr"
     },
     {
       "image": "./images/Rectangle 2-1.png",
       "name": "Database (MySQL)",
       "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
-      "price": 19000,
+      "price": 18000,
       "Credit": "5hr"
     },
     {
-      "image": "./images/Rectangle 2-6.pngjpg",
+      "image": "./images/hello2.png",
       "name": "roblem-Solving Part",
       "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
-      "price": 23000,
+      "price": 24000,
       "Credit": "2hr"
     }
   ]
