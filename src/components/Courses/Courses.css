@@ -5,12 +5,14 @@
     border-radius: 12px;
     background-color: white;
     padding: 5px;
-    /* padding-left: 5px;
-    padding-top: 5px; */
+    text-align: left;
 }
 .price-container{
     display: flex;
-    gap: 20px;
+    gap: 50px;
+}
+.btn-div{
+    display: flex;
     justify-content: center;
 }
 .card-container{
@@ -20,8 +22,18 @@
 }
 .select-btn{
     background-color: aqua;
-    width: 80%;
+    width: 100%;
 }
 .imgg{
     width: 100%;
+}
+.container{
+    display: flex;
+    gap: 40px;
+}
+.cart{
+    background-color: white;
+    
+    padding: 10px;
+    border-radius: 12px;
 }
