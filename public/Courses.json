@@ -1,66 +1,74 @@
 [
     {
-      "image": "./images/Rectangle 2-2.png",
-      "name": "Introduction to C Programming",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
-      "price": 15000,
-      "Credit": "1hr"
+        "id": "1",
+        "image": "./images/Rectangle 2-2.png",
+        "name": "Introduction to C Programming",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
+        "price": 15000,
+        "Credit": "1hr"
     },
     {
-      "image": "./images/Rectangle 2-3.png",
-      "name": "Introduction to Algorithms",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
-      "price": 25000,
-      "Credit": "2hr"
+        "id": "2",
+        "image": "./images/Rectangle 2-3.png",
+        "name": "Introduction to Algorithms",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
+        "price": 25000,
+        "Credit": "2hr"
     },
     {
-      "image": "./images/Rectangle 2-4.png",
-      "name": "Introduction to C++ for DSA",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
-      "price": 10000,
-      "Credit": "10hr"
+        "id": "3",
+        "image": "./images/Rectangle 2-4.png",
+        "name": "Introduction to C++ for DSA",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
+        "price": 10000,
+        "Credit": "10hr"
     },
     {
-      "image": "./images/Rectangle 3.png",
-      "name": "Basic Data Structures",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
-      "price": 35000,
-      "Credit": "5hr"
+        "id": "4",
+        "image": "./images/Rectangle 3.png",
+        "name": "Basic Data Structures",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
+        "price": 35000,
+        "Credit": "5hr"
     },
     {
-      "image": "./images/Rectangle 2.png",
-      "name": "Introduction to OOP Python",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
-      "price": 19000,
-      "Credit": "5hr"
+        "id": "5",
+        "image": "./images/Rectangle 2.png",
+        "name": "Introduction to OOP Python",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
+        "price": 19000,
+        "Credit": "5hr"
     },
     {
-      "image": "./images/hello1.png",
-      "name": "Introduction to OOP Python",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
-      "price": 23000,
-      "Credit": "2hr"
+        "id": "6",
+        "image": "./images/hello1.png",
+        "name": "Introduction to OOP Python",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
+        "price": 23000,
+        "Credit": "2hr"
     },
     {
-      "image": "./images/Rectangle 3-1.png",
-      "name": "AWS, Cloud Computing",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
-      "price": 36000,
-      "Credit": "5hr"
+        "id": "7",
+        "image": "./images/Rectangle 3-1.png",
+        "name": "AWS, Cloud Computing",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
+        "price": 36000,
+        "Credit": "5hr"
     },
     {
-      "image": "./images/Rectangle 2-1.png",
-      "name": "Database (MySQL)",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
-      "price": 18000,
-      "Credit": "5hr"
+        "id": "8",
+        "image": "./images/Rectangle 2-1.png",
+        "name": "Database (MySQL)",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
+        "price": 18000,
+        "Credit": "5hr"
     },
     {
-      "image": "./images/hello2.png",
-      "name": "roblem-Solving Part",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
-      "price": 24000,
-      "Credit": "2hr"
+        "id": "9",
+        "image": "./images/hello2.png",
+        "name": "roblem-Solving Part",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
+        "price": 24000,
+        "Credit": "2hr"
     }
-  ]
-  
+]

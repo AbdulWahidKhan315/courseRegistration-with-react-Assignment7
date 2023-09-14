@@ -6,7 +6,10 @@ import { faDollarSign, faBookOpen } from '@fortawesome/free-solid-svg-icons'
 import Course from '../Course/Course';
 const Courses = () => {
     const [courses, setCourses] = useState([]);
-    const [selectedCourse, setSelectedCourse]=useState([]);
+    const [selectedCourse, setSelectedCourse] = useState([]);
+    const [remaining, setRemaining] = useState(0);
+    const [totalCredit, setTotalCredit] = useState(0);
+    const [totolPrice, setTotalPrice]=useState(0);
 
     useEffect(() => {
         fetch('../../../public/Courses.json')
@@ -14,8 +17,32 @@ const Courses = () => {
             .then(data => setCourses(data));
     }, [])
 
-    const handleSelectBtn=(course)=>{
-        setSelectedCourse([...selectedCourse,course])
+    const handleSelectBtn = (course) => {
+        const isAvailable = selectedCourse.find(item => item.id == course.id);
+        let count = parseInt(course.Credit);
+        if (isAvailable) {
+            return alert("already booked")
+        }
+        else {
+            selectedCourse.forEach(item => {
+                count = count + parseInt(item.Credit);
+            });
+            const remaining = 20 - count;
+            if (count > 20) {
+                return alert('credit sesh r hobe na');
+            } else {
+                setTotalCredit(count);
+                setRemaining(remaining);
+                setSelectedCourse([...selectedCourse, course])
+            }
+
+        }
+        let totalPrice = course.price;
+        selectedCourse.forEach(price=>{
+            totalPrice=totalPrice + price.price;
+        })
+        setTotalPrice(totalPrice);
+
     }
     // console.log(courses)
     return (
@@ -24,7 +51,7 @@ const Courses = () => {
                 <div className="card-container">
                     {
                         courses.map(course => (
-                            <div key={course.price} className="card">
+                            <div key={course.id} className="card">
                                 <img className='imgg' src={course.image} alt="" />
                                 <h3>{course.name}</h3>
                                 <p>{course.description}</p>
@@ -33,14 +60,14 @@ const Courses = () => {
                                     <p><FontAwesomeIcon icon={faBookOpen} /> Credit: {course.Credit}</p>
                                 </div>
                                 <div className='btn-div'>
-                                <button onClick={()=>handleSelectBtn(course)} className='select-btn'>SELECT</button>
+                                    <button onClick={() => handleSelectBtn(course)} className='select-btn'>SELECT</button>
                                 </div>
                             </div>
                         ))
                     }
                 </div>
                 <div className='cart'>
-                    <Course selectedCourse={selectedCourse}></Course>
+                    <Course selectedCourse={selectedCourse} remaining={remaining} totalCredit={totalCredit} totolPrice={totolPrice}></Course>
                 </div>
             </div>
         </div>
