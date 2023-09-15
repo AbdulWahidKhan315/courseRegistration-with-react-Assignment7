@@ -1,7 +1,7 @@
 [
     {
         "id": "1",
-        "image": "./images/Rectangle 2-2.png",
+        "image": "https://i.ibb.co/pdn0mzp/Rectangle-2-2.png",
         "name": "Introduction to C Programming",
         "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
         "price": 15000,
@@ -9,7 +9,7 @@
     },
     {
         "id": "2",
-        "image": "./images/Rectangle 2-3.png",
+        "image": "https://i.ibb.co/TqfrVzG/Rectangle-2-3.png",
         "name": "Introduction to Algorithms",
         "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
         "price": 25000,
@@ -17,7 +17,7 @@
     },
     {
         "id": "3",
-        "image": "./images/Rectangle 2-4.png",
+        "image": "https://i.ibb.co/ZX0n7DH/Rectangle-2-4.png",
         "name": "Introduction to C++ for DSA",
         "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
         "price": 10000,
@@ -25,7 +25,7 @@
     },
     {
         "id": "4",
-        "image": "./images/Rectangle 3.png",
+        "image": "https://i.ibb.co/qyp5kS4/Rectangle-3.png",
         "name": "Basic Data Structures",
         "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
         "price": 35000,
@@ -33,7 +33,7 @@
     },
     {
         "id": "5",
-        "image": "./images/Rectangle 2.png",
+        "image": "https://i.ibb.co/fFg9zWY/Rectangle-2.png",
         "name": "Introduction to OOP Python",
         "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
         "price": 19000,
@@ -41,7 +41,7 @@
     },
     {
         "id": "6",
-        "image": "./images/hello1.png",
+        "image": "https://i.ibb.co/YySgS3g/Rectangle-2-5.png",
         "name": "Introduction to OOP Python",
         "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
         "price": 23000,
@@ -49,7 +49,7 @@
     },
     {
         "id": "7",
-        "image": "./images/Rectangle 3-1.png",
+        "image": "https://i.ibb.co/MgFqdKD/Rectangle-3-1.png",
         "name": "AWS, Cloud Computing",
         "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
         "price": 36000,
@@ -57,7 +57,7 @@
     },
     {
         "id": "8",
-        "image": "./images/Rectangle 2-1.png",
+        "image": "https://i.ibb.co/Y7pMKdY/Rectangle-2-1.png",
         "name": "Database (MySQL)",
         "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
         "price": 18000,
@@ -65,7 +65,7 @@
     },
     {
         "id": "9",
-        "image": "./images/hello2.png",
+        "image": "https://i.ibb.co/x6D0jkP/Rectangle-2-6.png",
         "name": "roblem-Solving Part",
         "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
         "price": 24000,
