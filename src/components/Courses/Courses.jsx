@@ -4,12 +4,13 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDollarSign, faBookOpen } from '@fortawesome/free-solid-svg-icons'
 import Course from '../Course/Course';
+import Swal from 'sweetalert2';
 const Courses = () => {
     const [courses, setCourses] = useState([]);
     const [selectedCourse, setSelectedCourse] = useState([]);
     const [remaining, setRemaining] = useState(0);
     const [totalCredit, setTotalCredit] = useState(0);
-    const [totolPrice, setTotalPrice]=useState(0);
+    const [totolPrice, setTotalPrice] = useState(0);
 
     useEffect(() => {
         fetch('../../../public/Courses.json')
@@ -20,8 +21,14 @@ const Courses = () => {
     const handleSelectBtn = (course) => {
         const isAvailable = selectedCourse.find(item => item.id == course.id);
         let count = parseInt(course.Credit);
+        let totalPrice = course.price;
         if (isAvailable) {
-            return alert("already booked")
+            Swal.fire({
+                title: 'Warning!',
+                text: 'You have already selected this course.',
+                icon: 'warning',
+                confirmButtonText: 'Cancel'
+            })
         }
         else {
             selectedCourse.forEach(item => {
@@ -29,20 +36,23 @@ const Courses = () => {
             });
             const remaining = 20 - count;
             if (count > 20) {
-                return alert('credit sesh r hobe na');
+                return Swal.fire({
+                    title: 'Warning!',
+                    text: 'Insufficient Credit. You can not go beyond the limit of credit.',
+                    icon: 'warning',
+                    confirmButtonText: 'Cancel'
+                });
             } else {
+                selectedCourse.forEach(price => {
+                    totalPrice = totalPrice + price.price;
+                })
+                setTotalPrice(totalPrice);
                 setTotalCredit(count);
                 setRemaining(remaining);
                 setSelectedCourse([...selectedCourse, course])
             }
 
         }
-        let totalPrice = course.price;
-        selectedCourse.forEach(price=>{
-            totalPrice=totalPrice + price.price;
-        })
-        setTotalPrice(totalPrice);
-
     }
     // console.log(courses)
     return (

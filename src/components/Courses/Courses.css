@@ -33,7 +33,7 @@
 }
 .cart{
     background-color: white;
-    
+    max-height: 500px;
     padding: 10px;
     border-radius: 12px;
 }
