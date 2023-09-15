@@ -13,7 +13,7 @@ const Courses = () => {
     const [totolPrice, setTotalPrice] = useState(0);
 
     useEffect(() => {
-        fetch('../../../public/Courses.json')
+        fetch('Courses.json')
             .then(res => res.json())
             .then(data => setCourses(data));
     }, [])
