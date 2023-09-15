@@ -4,11 +4,11 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDollarSign, faBookOpen } from '@fortawesome/free-solid-svg-icons'
 import Course from '../Course/Course';
-import Swal from 'sweetalert2';
+import toast,{Toaster} from 'react-hot-toast';
 const Courses = () => {
     const [courses, setCourses] = useState([]);
     const [selectedCourse, setSelectedCourse] = useState([]);
-    const [remaining, setRemaining] = useState(0);
+    const [remaining, setRemaining] = useState(20);
     const [totalCredit, setTotalCredit] = useState(0);
     const [totolPrice, setTotalPrice] = useState(0);
 
@@ -23,12 +23,7 @@ const Courses = () => {
         let count = parseInt(course.Credit);
         let totalPrice = course.price;
         if (isAvailable) {
-            Swal.fire({
-                title: 'Warning!',
-                text: 'You have already selected this course.',
-                icon: 'warning',
-                confirmButtonText: 'Cancel'
-            })
+            toast.error("You have already selected this course.")
         }
         else {
             selectedCourse.forEach(item => {
@@ -36,12 +31,7 @@ const Courses = () => {
             });
             const remaining = 20 - count;
             if (count > 20) {
-                return Swal.fire({
-                    title: 'Warning!',
-                    text: 'Insufficient Credit. You can not go beyond the limit of credit.',
-                    icon: 'warning',
-                    confirmButtonText: 'Cancel'
-                });
+                return toast.error("Insufficient Credit. You can not go beyond the limit of credit hr.")
             } else {
                 selectedCourse.forEach(price => {
                     totalPrice = totalPrice + price.price;
@@ -71,6 +61,7 @@ const Courses = () => {
                                 </div>
                                 <div className='btn-div'>
                                     <button onClick={() => handleSelectBtn(course)} className='select-btn'>SELECT</button>
+                                    <Toaster></Toaster>
                                 </div>
                             </div>
                         ))
@@ -81,6 +72,7 @@ const Courses = () => {
                 </div>
             </div>
         </div>
+
     );
 };
 
