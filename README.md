@@ -12,7 +12,8 @@
 
 
 # Describing how I managed the state in my assignment porject below-
-  * In total I have used five state in my assignment project. The first state I have used that is "const    [courses,    setCourses] = useState([]);" .I used this state for managing all courses. After fetching data by  using fetch, I converted the data in javascript object format after wards I set all data in setCourses function  so that I can handle the data later. Then I used map on courses which is obtained from the state for showing all data in display.
+  * In total I have used five state in my assignment project. The first state I have used that is "const    [courses,    setCourses] = useState([]);" .I used this state for managing all courses. After fetching data by  using fetch, I converted the data in javascript object format after wards I set all data in setCourses function  so that I can handle the data later. The state's default value is an empty array, because if data is not availabe then empty array will be the result. Then I used map on courses which is obtained from the state for showing all data in display.
+
     Again I declared this useState "const [selectedCourse, setSelectedCourse] = useState([]);" for managing the selected courses which will be selected by users. The all selected courses have set on setSelectedCourse function for later use. Collected data from this state 'selectedCourse' for showing selected courses in cart.
      
     To handle Credit remaining hour I also have declared a state that is "const [remaining, setRemaining] = useState(20);". After calculating the remaining hour has set on setRemaining function and then from this state collected data to display in cart section.
